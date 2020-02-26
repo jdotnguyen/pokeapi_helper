@@ -1,0 +1,19 @@
+{
+  "name": "pokeapi_helper",
+  "version": "0.1.0",
+  "description": "Simple raw Javascript helper to get PokeAPI calls. Framework-agnostic by using native Javascript XHR responses instead of bloated rxjs observables.",
+  "main": "helper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdotnguyen/pokeapi_helper.git"
+  },
+  "author": "Justin Nguyen <justin_nguyen@outlook.com> (https://www.justinnguyen.ca)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdotnguyen/pokeapi_helper/issues"
+  },
+  "homepage": "https://github.com/jdotnguyen/pokeapi_helper#readme"
+}
