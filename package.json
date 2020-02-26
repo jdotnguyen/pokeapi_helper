@@ -1,6 +1,6 @@
 {
   "name": "pokeapi_helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple raw Javascript helper to get PokeAPI calls. Framework-agnostic by using native Javascript XHR responses instead of bloated rxjs observables.",
   "main": "service.js",
   "scripts": {
