@@ -2,7 +2,7 @@
   "name": "pokeapi_helper",
   "version": "0.1.0",
   "description": "Simple raw Javascript helper to get PokeAPI calls. Framework-agnostic by using native Javascript XHR responses instead of bloated rxjs observables.",
-  "main": "helper.js",
+  "main": "service.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
