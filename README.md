@@ -1,6 +1,9 @@
 # pokeapi_helper
 Simple Javascript ES6 helper to get PokeAPI endpoints rather than having to searching for them in the PokeAPI documentation.
 
+## May 7, 2020 Update
+- Added all Pokémon-related calls
+
 ## May 6, 2020 Update
 - Converted code to use promises and fetch to make calls asynchronous.
 
