@@ -2,174 +2,202 @@ class PokeAPIHelper {
     // Endpoint
     _ENDPOINT = 'https://pokeapi.co/api/v2';
 
-    constructor() {
-        this.call;
-    }
-
     // Pokemon helpers
-    ListPokemon() {
-        return this.fetcher(this._ENDPOINT + '/pokemon');
-    }
-
-    ReadPokemon(id) {
+    GetPokemon(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokemon/' + id);
     }
 
-    ListPokemonAbility() {
-        return this.fetcher(this._ENDPOINT + '/ability');
-    };
-
-    ReadPokemonAbility(id) {
+    GetPokemonAbility(id = '') {
         return this.fetcher(this._ENDPOINT + '/ability/' + id);
     };
-    
-    ListPokemonCharacteristic() {
-        return this.fetcher(this._ENDPOINT + '/characteristic');
-    };
 
-    ReadPokemonCharacteristic(id) {
+    GetPokemonCharacteristic(id = '') {
         return this.fetcher(this._ENDPOINT + '/characteristic/' + id);
     };
 
-    ListPokemonEggGroup() {
-        return this.fetcher(this._ENDPOINT + '/egg-group');
-    };
-
-    ReadPokemonEggGroup(id) {
+    GetPokemonEggGroup(id = '') {
         return this.fetcher(this._ENDPOINT + '/egg-group/' + id);
     };
 
-    ListPokemonGender() {
-        return this.fetcher(this._ENDPOINT + '/gender');
-    };
-
-    ReadPokemonGender(id) {
+    GetPokemonGender(id = '') {
         return this.fetcher(this._ENDPOINT + '/gender/' + id);
     };
 
-    ListPokemonGrowthRate() {
-        return this.fetcher(this._ENDPOINT + '/growth-rate');
-    };
-
-    ReadPokemonGrowthRate(id) {
+    GetPokemonGrowthRate(id = '') {
         return this.fetcher(this._ENDPOINT + '/growth-rate/' + id);
     };
 
-    ListPokemonNature() {
-        return this.fetcher(this._ENDPOINT + '/nature');
-    };
-
-    ReadPokemonNature(id) {
+    GetPokemonNature(id = '') {
         return this.fetcher(this._ENDPOINT + '/nature/' + id);
     };
 
-    ListPokemonPokeathlonStat() {
-        return this.fetcher(this._ENDPOINT + '/pokeathlon-stat');
-    };
-
-    ReadPokemonPokeathlonStat(id) {
+    GetPokemonPokeathlonStat(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokeathlon-stat/' + id);
     };
 
-    ListPokemonColor() {
-        return this.fetcher(this._ENDPOINT + '/pokemon-color');
-    };
-
-    ReadPokemonColor(id) {
+    GetPokemonColor(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokemon-color/' + id);
     };
 
-    ListPokemonForm() {
-        return this.fetcher(this._ENDPOINT + '/pokemon-form');
-    };
-
-    ReadPokemonForm(id) {
+    GetPokemonForm(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokemon-form/' + id);
     };
 
-    ListPokemonHabitat() {
-        return this.fetcher(this._ENDPOINT + '/pokemon-habitat');
-    };
-
-    ReadPokemonHabitat(id) {
+    GetPokemonHabitat(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokemon-habitat/' + id);
     };
 
-    ListPokemonShape() {
-        return this.fetcher(this._ENDPOINT + '/pokemon-shape');
-    };
-
-    ReadPokemonShape(id) {
+    GetPokemonShape(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokemon-shape/' + id);
     };
 
-    ListPokemonSpecies() {
-        return this.fetcher(this._ENDPOINT + '/pokemon-species');
-    };
-
-    ReadPokemonSpecies(id) {
+    GetPokemonSpecies(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokemon-species/' + id);
     };
 
-    ListPokemonStat() {
-        return this.fetcher(this._ENDPOINT + '/pokemon-stat');
-    };
-
-    ReadPokemonStat(id) {
+    GetPokemonStat(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokemon-stat/' + id);
     };
 
-    ListPokemonType() {
-        return this.fetcher(this._ENDPOINT + '/pokemon-type');
-    };
-
-    ReadPokemonType(id) {
+    GetPokemonType(id = '') {
         return this.fetcher(this._ENDPOINT + '/pokemon-type/' + id);
     };
 
     // Move Helpers
-    ListMove() {
-        return this.fetcher(this._ENDPOINT + '/move');
+    GetMove(id = '') {
+        return this.fetcher(this._ENDPOINT + '/move/' + id);
+    }
+
+    GetMoveAilment(id = '') {
+        return this.fetcher(this._ENDPOINT + '/move-ailment/' + id);
+    }
+
+    GetMoveBattleStyle(id = '') {
+        return this.fetcher(this._ENDPOINT + '/move-battle-style/' + id);
+    }
+
+    GetMoveCategory(id = '') {
+        return this.fetcher(this._ENDPOINT + '/move-category/' + id);
+    }
+
+    GetMoveDamageClass(id = '') {
+        return this.fetcher(this._ENDPOINT + '/move-damage-class/' + id);
+    }
+
+    GetMoveLearnMethod(id = '') {
+        return this.fetcher(this._ENDPOINT + '/move-learn-method/' + id);
+    }
+
+    GetMoveTarget(id = '') {
+        return this.fetcher(this._ENDPOINT + '/move-target/' + id);
     }
 
     // Machine Helpers
-    ListMachine() {
-        return this.fetcher(this._ENDPOINT + '/machine');
+    GetMachine(id = '') {
+        return this.fetcher(this._ENDPOINT + '/machine/' + id);
     }
 
     // Location Helpers
-    ListLocation() {
-        return this.fetcher(this._ENDPOINT + '/location');
+    GetLocation(id = '') {
+        return this.fetcher(this._ENDPOINT + '/location/' + id);
+    }
+
+    GetLocationArea(id = '') {
+        return this.fetcher(this._ENDPOINT + '/location-area/' + id);
+    }
+
+    GetPalParkArea(id = '') {
+        return this.fetcher(this._ENDPOINT + '/pal-park-area/' + id);
+    }
+
+    GetRegion(id = '') {
+        return this.fetcher(this._ENDPOINT + '/region/' + id);
     }
 
     // Item Helpers
-    ListItem() {
-        return this.fetcher(this._ENDPOINT + '/item');
+    GetItem(id = '') {
+        return this.fetcher(this._ENDPOINT + '/item/' + id);
+    }
+
+    GetItemAttribute(id = '') {
+        return this.fetcher(this._ENDPOINT + '/item-attribute/' + id);
+    }
+
+    GetItemCategory(id = '') {
+        return this.fetcher(this._ENDPOINT + '/item-category/' + id);
+    }
+
+    GetItemFlingEffect(id = '') {
+        return this.fetcher(this._ENDPOINT + '/item-fling-effect/' + id);
+    }
+
+    GetItemPocket(id = '') {
+        return this.fetcher(this._ENDPOINT + '/item-pocket/' + id);
     }
 
     // Game Helpers
-    ListGameGeneration() {
-        return this.fetcher(this._ENDPOINT + '/generation');
+    GetGameGeneration(id = '') {
+        return this.fetcher(this._ENDPOINT + '/generation/' + id);
+    }
+
+    GetGamePokedex(id = '') {
+        return this.fetcher(this._ENDPOINT + '/pokedex/' + id);
+    }
+
+    GetGameVersion(id = '') {
+        return this.fetcher(this._ENDPOINT + '/version/' + id);
+    }
+
+    GetGameVersionGroup(id = '') {
+        return this.fetcher(this._ENDPOINT + '/version-group/' + id);
     }
 
     // Evolution Helpers
-    ListEvolutionChain() {
-        return this.fetcher(this._ENDPOINT + '/evolution-chain');
+    GetEvolutionChain(id = '') {
+        return this.fetcher(this._ENDPOINT + '/evolution-chain/' + id);
+    }
+
+    GetEvolutionTrigger(id = '') {
+        return this.fetcher(this._ENDPOINT + '/evolution-trigger/' + id);
     }
 
     // Encounter Helpers
-    ListEncounterMethod() {
-        return this.fetcher(this._ENDPOINT + '/encounter-method')
+    GetEncounterMethod(id = '') {
+        return this.fetcher(this._ENDPOINT + '/encounter-method/' + id)
+    }
+
+    GetEncounterCondition(id = '') {
+        return this.fetcher(this._ENDPOINT + '/encounter-condition/' + id)
+    }
+
+    GetEncounterConditionValue(id = '') {
+        return this.fetcher(this._ENDPOINT + '/encounter-condition-value/' + id)
     }
 
     // Contest Helpers
-    ListContestType() {
-        return this.fetcher(this._ENDPOINT + '/contest-type');
+    GetContestType(id = '') {
+        return this.fetcher(this._ENDPOINT + '/contest-type/' + id);
+    }
+
+    GetContestEffect(id = '') {
+        return this.fetcher(this._ENDPOINT + '/contest-effect/' + id);
+    }
+
+    GetContestSuperEffect(id = '') {
+        return this.fetcher(this._ENDPOINT + '/super-contest-effect/' + id);
     }
 
     // Berry Helpers
-    ListBerry() {
-        return this.fetcher(this._ENDPOINT + '/berry')
+    GetBerry(id = '') {
+        return this.fetcher(this._ENDPOINT + '/berry/' + id);
+    }
+
+    GetBerryFirmness(id = '') {
+        return this.fetcher(this._ENDPOINT + '/berry-firmness/' + id);
+    }
+
+    GetBerryFlavor(id = '') {
+        return this.fetcher(this._ENDPOINT + '/berry-flavor/' + id);
     }
 
 
