@@ -1,7 +1,7 @@
 {
   "name": "pokeapi_helper",
-  "version": "0.2.0",
-  "description": "Simple raw Javascript helper to get PokeAPI calls. Framework-agnostic by using native JavaScript asynchronous fetch requests.",
+  "version": "1.0.0",
+  "description": "Simple Javascript wrapper to get PokeAPI calls. Using native JavaScript asynchronous fetch requests.",
   "main": "service.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
